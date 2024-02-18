@@ -21,7 +21,7 @@ backend "remote" {
 		organization = "CloudQuickLabs"
 
 		workspaces {
-			name = "AWSEKS"
+			name = "AWS_EKS"
 		}
 	}
 }
@@ -42,7 +42,7 @@ provider "kubernetes" {
 */
 
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-central-1"
 }
 
 resource "random_string" "suffix" {
